@@ -1,0 +1,1506 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    /* Modified */
+    overflow-x: hidden;
+}
+
+.dropdown .dropdown-toggle {
+    border: none;
+}
+
+.dropdown .dropdown-toggle:focus {
+    box-shadow: none;
+    background: none
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Added */
+a,
+button {
+    transition: 200ms all ease-in-out;
+}
+
+/* Added */
+h5.brand-name {
+    font-family: 'Roboto Condensed';
+    margin-bottom: 0;
+}
+
+/* header */
+.header {
+    background-color: #489e90;
+    display: flex;
+    padding: 1em 1.5em;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* Removed */
+    justify-content: space-between;
+    /* Added */
+}
+
+.header .search-area .search-area-input {
+    padding: 0.2em 1em;
+    background-color: rgb(145, 197, 188);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+}
+
+.header .search-area input::placeholder {
+    color: white;
+}
+
+.header .search-area {
+    position: relative;
+    width: 100%;
+    max-width: 40em;
+    /* Modified */
+}
+
+.logout .link {
+    font-weight: 600;
+}
+
+.logout .link:hover {
+    color: rgb(131, 199, 188);
+}
+.dropdown-toggle.header-dropdown::after{
+    display: none;
+}
+/* Aktuelle_Beitrage page */
+.search-area .fa-search {
+    position: absolute;
+    color: white;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.header a.link {
+    color: white;
+    text-decoration: none;
+}
+
+.header a .fa-cog {
+    font-size: 1.2em;
+}
+
+.header .dropdown button {
+    background-color: white;
+    border: none;
+    color: #666666;
+}
+
+.dropdown-color {
+    background-color: white;
+    padding: 0.1em 0.5em;
+    border-radius: 8px;
+}
+
+.dropdown-color .bg-green {
+    background-color: rgb(0, 161, 89);
+}
+
+.dropdown-color .color-picker {
+    height: 2em;
+    width: 2em;
+    border-radius: 8px;
+    margin-bottom: -2.1em;
+    margin-top: 2.5px;
+}
+
+.header .dropdown-menu a:hover {
+    background-color: rgb(193, 227, 221);
+}
+
+/* Top-links */
+.top-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #b7b7b7;
+    padding: 1.2em;
+    flex-wrap: wrap;
+}
+
+.top-links .link {
+    color: rgb(83, 100, 107);
+    text-decoration: none;
+    padding: 0.3em 1.1em;
+    min-width: 12%;
+    margin-left: 0.5em;
+    text-align: center;
+    font-weight: 600;
+}
+
+.top-links .active,
+.top-links .link:hover {
+    background-color: rgb(83, 99, 107);
+    color: white;
+    padding: 0.3em 1.1em;
+    border-radius: 1em;
+}
+
+/* Calender bar */
+.calender-bar .dropdowns {
+    display: flex;
+    align-items: center;
+}
+
+.floating-icons .fab {
+    font-size: 0.8em;
+    color: rgb(83, 99, 107);
+}
+
+.floating-icons {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(83, 99, 107);
+    border-radius: 20px;
+    position: fixed;
+    padding: 0 0.7em;
+    z-index: 1000;
+    display: none;
+}
+
+.floating-icons a {
+    margin-left: 0.3em;
+}
+
+.table.date-table tbody tr td {
+    padding: 0.8em 0.5em;
+    font-weight: 700;
+    /* Modified */
+}
+
+.table .social-icon {
+    margin-top: 0.5em;
+}
+
+.calender-bar .dropdown-toggle::after {
+    display: none;
+}
+
+.calender-bar .dropdown button {
+    background-color: white;
+    border: 1px solid #c7c5c4;
+    color: rgb(102, 102, 102);
+    padding: 0.3em 0.9em;
+    border-radius: 9px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.calender-bar .table-calender {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4em 1em;
+    background-color: rgb(83, 99, 107);
+    width: calc(100% - 5px);
+    margin-left: 2px;
+}
+.table-calender .calender-img{
+    height: 1.1em;
+}
+.table-calender .fas {
+    color: white;
+}
+
+.social-media .text.green-color:hover {
+    color: rgba(131, 199, 188, 0.6);
+}
+
+.calender-bar tbody tr td {
+    background-color: rgb(235, 235, 235);
+    border: 2px solid white;
+    height: 6em;
+    min-width: 3em;
+    color: #90999e;
+}
+
+.calender-bar thead tr th {
+    background-color: rgb(235, 235, 235);
+    border: 2px solid white;
+    color: rgb(83, 99, 107);
+}
+.calender-bar .table-bordered .light-gray {
+    background-color: rgb(248, 248, 248);
+}
+.table-calender .calender-date{
+    font-weight: 600;
+    color: white;
+    font-size: 1.3em;
+}
+.table-bordered .fab {
+    font-size: 0.7em;
+    color: rgb(83, 99, 107);
+}
+
+.table-bordered .fab:hover {
+    color: white;
+}
+
+.table-bordered .social-icon-row-g {
+    background-color: rgb(201, 221, 162);
+}
+
+.table-bordered .social-icon-row-y {
+    background-color: rgb(255, 247, 165);
+}
+
+.table-bordered .social-icon-row-r {
+    background-color: rgb(233, 155, 127);
+}
+
+.green-color {
+    color: #83c7bc;
+}
+
+.green-color.bold-text {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.project-card .firmenkontor24 {
+    font-size: 1.2em;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.project-card .project-card-text {
+    color: rgb(51, 51, 51);
+    font-weight: 600;
+    font-size: 1.1em;
+}
+.project-card h4.green{
+    font-weight: 700;
+    font-size: 1.2em;
+}
+.project-card .green-color.green {
+    color: #489e90;
+    text-transform: uppercase;
+}
+
+.side-menu .project-card {
+    border: 1px solid #939394;
+    background-color: rgb(248, 248, 248);
+    padding: 1.1em 1.5em;
+    margin-top: 1.5em;
+}
+
+.project-card .green-color.text {
+    text-decoration: underline;
+    float: right;
+}
+
+.project-card .social-media .fab {
+    font-size: 1.6em;
+}
+
+.project-card .text {
+    font-weight: 600;
+}
+
+.check-point .check-box {
+    height: 1.4em;
+    width: 1.4em;
+    margin-right: 0.7em;
+}
+
+.check-point {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.check-point>.text {
+    font-weight: 700;
+    font-size: 0.8em;
+}
+
+.check-box.green {
+    background-color: rgb(201, 221, 162);
+}
+
+.check-box.yellow {
+    background-color: rgb(255, 241, 73);
+}
+
+.check-box.red {
+    background-color: rgb(233, 155, 127);
+}
+
+.main-table .table-header.data-table-header {
+    border-top: none;
+    border-right: none;
+}
+
+.menu-bar .gray-header.data-table-header {
+    border-right: none;
+}
+
+.table-header.details-table.common-border {
+    border-bottom: 1px solid rgb(160, 160, 161);
+}
+
+.table-header {
+    display: flex;
+    align-items: center;
+    border-left: 24px solid #83c7bc;
+    height: 3.5em;
+    justify-content: space-between;
+    padding-right: 1em;
+    color: #83c7bc;
+    background-color: rgb(248, 248, 248);
+    border-right: 1px solid rgb(155, 155, 156);
+    border-top: 1px solid rgb(155, 155, 156);
+}
+
+.table-header .info-heading {
+    color: rgb(51, 51, 51);
+    text-transform: capitalize;
+}
+
+.table-header h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* custom checkbox start */
+/* Customize the label (the container) */
+.container-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 36px;
+    padding-right: 20px;
+    top: 7px;
+    right: -7px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 13px;
+}
+.table-checkbox.container-checkbox{
+    margin-bottom: 14px;
+}
+.container-checkbox.todo-list-text {
+    color: rgb(102, 102, 102);
+    font-weight: 500;
+    font-size: 1.1em;
+}
+.container-checkbox.todo-list-text .checkmark{
+    top: 3px;
+}
+
+/* Hide the browser's default checkbox */
+.container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #c9c9c9;
+    height: 20px;
+    width: 20px;
+    transition: 200ms ease-in-out;
+    background-color: white
+}
+.checkmark:hover{
+    border: 1px solid #5e6d75;
+}
+
+/* On mouse-over, add a grey background color */
+.container-checkbox:hover input~.checkmark {
+    background-color: white;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked~.checkmark {
+    background-color: white;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container-checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 8px;
+    height: 12px;
+    border: solid rgb(83, 99, 107);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* custom checkbox end */
+.check-point .o-circle {
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-bottom: 0;
+}
+
+/* Diese */
+.diese-table a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.diese-table thead tr {
+    color: rgb(121, 138, 147);
+    border: 1px solid transparent;
+}
+
+.diese-table tbody td:nth-of-type(odd) {
+    background-color: rgb(235, 235, 235);
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.diese-table thead th:nth-of-type(odd) {
+    background-color: rgb(235, 235, 235);
+    font-size: 0.9em;
+}
+
+.diese-table thead th:nth-of-type(even) {
+    background-color: rgb(248, 248, 248);
+    font-size: 0.9em;
+}
+
+.diese-table tbody td:nth-of-type(even) {
+    background-color: rgb(248, 248, 248);
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.diese-table tbody tr td.google-box {
+    background-color: red;
+    text-align: center;
+    font-weight: 100;
+}
+
+.diese-table tbody tr td.google-box .fab {
+    color: white;
+    font-size: 1.5em;
+}
+
+.diese-table tbody tr td.google-box.twitter {
+    background-color: rgb(85, 172, 238);
+    text-align: center;
+}
+
+.diese-table tbody tr td.google-box.face-book {
+    background-color: rgb(59, 89, 153);
+    text-align: center;
+}
+
+.diese-table tbody tr td.add-box {
+    text-align: center;
+}
+
+.diese-table tbody tr td.add-box {
+    background-color: rgb(131, 199, 188);
+}
+
+.diese-table tbody tr td.add-box:hover {
+    background-color: rgb(72, 158, 144);
+}
+
+/* .diese-table tbody tr td.add-box.active{
+    background-color: rgb(72, 158, 144);
+} */
+.diese-table tbody tr td.add-box .fas {
+    color: white;
+    font-size: 1.3em;
+}
+
+.social-icon .badge.badge-light {
+    background: rgb(72, 158, 144);
+    border-radius: 50%;
+    color: white;
+}
+
+/* Alle_Beitrage Page */
+.menu-bar {
+    border: 1px solid rgb(160, 160, 161);
+    border-top: none;
+}
+
+.menu-bar .check-boxs {
+    padding: 0.8em 1em;
+}
+
+.menu-bar .check-boxs a {
+    margin-left: 7px;
+}
+
+.menu-bar .check-boxs a:hover {
+    color: rgb(72, 158, 144);
+}
+
+.gray-color {
+    color: #53636b;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+.table-header.gray-header {
+    background-color: rgb(235, 235, 235);
+}
+
+.table-header .table-link {
+    color: rgb(83, 100, 107);
+    font-weight: 600;
+}
+
+.table-header .table-link:hover {
+    color: rgb(131, 188, 199);
+}
+.check-boxs.autoren .checkmark{
+    top: 2px;
+}
+/* Detail_Seite Page  */
+.table-bordered .light-green {
+    background-color: rgb(131, 199, 188);
+}
+
+.table-inputs {
+    border: none;
+}
+.table-inputs::placeholder{
+    color: rgb(102, 102, 102);
+}
+.table-inputs:focus {
+    box-shadow: none;
+}
+
+.calender-menu.dropdown-menu {
+    margin-left: 0.5em;
+    margin-top: 0;
+}
+
+.calender-menu .dropdown-toggle.calender-dropdown::after {
+    float: right;
+    margin-top: 6px;
+    font-size: 1.5em;
+    color: black;
+}
+
+.calender-menu {
+    width: 100%;
+    margin-top: 2em;
+}
+
+.calender-menu tr td {
+    border: 1px solid #8b8c8d;
+    padding: 0.6em 1em;
+}
+
+.calender-menu tr td:nth-of-type(1) {
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+    font-size: 1.1em;
+    padding: 0.5em 3em;
+    background-color: rgb(248, 248, 248);
+}
+
+.calender-menu .selection {
+    color: rgb(51, 51, 51);
+    font-weight: 600;
+    padding: 0.5em 1.5em;
+    background-color: rgb(248, 248, 248);
+    border-bottom: none;
+    width: 50%;
+}
+
+.calender-menu .selection.btn.btn-light,
+.table-dropdown {
+    background-color: white;
+    border-radius: 0;
+    color: rgb(102, 102, 102);
+    width: 100%;
+}
+
+.calender-menu .dropdown {
+    width: 100%;
+}
+
+.main-table .autor td {
+    border: 1px solid rgb(155, 155, 156);
+    padding: 0.5em 1.5em;
+}
+
+.main-table .autor {
+    width: 100%;
+}
+.autor-icon.fa-chevron-down.fas{
+    float: right;
+    margin-top: 3px;
+    color: #666666;
+}
+.fa-twitter {
+    font-size: 1.5em;
+    color: rgb(85, 172, 238);
+}
+
+.main-table .dropdown-toggle::after {
+    float: right;
+    margin-top: 0.5em;
+}
+
+.main-table .border {
+    background-color: rgb(248, 248, 248);
+    height: 3.6em;
+}
+
+.main-table .same-header-bg {
+    background-color: rgb(235, 235, 235);
+    border-top: none;
+    border-right: none;
+}
+
+.main-table .same-header-bg h6 {
+    font-weight: 700;
+}
+
+.main-table .status-table td {
+    padding: 0.2em 1em;
+    border: 1px solid rgb(160, 160, 161);
+}
+
+.status-table tbody tr>td:last-child {
+    border-right: none;
+}
+
+.status-table tbody tr>td:first-child {
+    border-left: none;
+}
+
+.dropdown .btn-light .green-point {
+    height: 1em;
+    display: inline-block;
+    width: 1em;
+    border-radius: 50%;
+    background-color: rgb(201, 221, 162);
+    margin-right: 2px;
+}
+
+.todo-list .notizen-text-area {
+    height: calc(100% - 1em);
+    border: none;
+    box-shadow: none;
+
+}
+
+.todo-list.notitzen {
+    height: 85%;
+    padding: 0.8em 1.5em;
+    border-left: none;
+    border-right: none;
+}
+
+.lists-border {
+    border: 1px solid rgb(133, 134, 135);
+    border-top: none;
+}
+
+.todo-list-adder .weiteres {
+    background-color: rgb(235, 235, 235);
+    border: 1px solid rgb(197, 197, 197);
+    padding: 0.5em 0.6em;
+    position: absolute;
+    left: 65px;
+    bottom: -23px;
+    z-index: 3;
+}
+
+.weiteres .weiteres-input::placeholder {
+    font-weight: 600;
+    font-size: 1.1em;
+    color: rgb(72, 158, 144);
+}
+
+.weiteres .weiteres-input {
+    border: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    color: rgb(72, 158, 144);
+    outline: none;
+    background-color: rgb(235, 235, 235);
+}
+
+.todo-list-adder .weiteres .ok-button {
+    background-color: rgb(72, 158, 144);
+    color: white;
+    border-radius: 50%;
+    margin-left: 2em;
+    height: 2em;
+    margin-left: 1.5em;
+    width: 2em;
+    text-align: center;
+    line-height: 2.1;
+}
+
+.todo-list-adder {
+    padding-left: 1.4em;
+    border-left: 1px solid rgb(160, 160, 161);
+    border-right: 1px solid rgb(160, 160, 161);
+}
+
+#list-input {
+    position: relative;
+    padding: 1em 2.2em;
+}
+
+#list-input>a {
+    position: absolute;
+}
+
+#list-input .ok-button {
+    margin-left: 0;
+}
+
+#list-input .weiteres {
+    left: 72px;
+    bottom: -34px;
+}
+
+.todo-list-adder .fa-plus-square {
+    color: rgb(72, 158, 144);
+    font-size: 1.3em;
+}
+
+.todo-list {
+    border: 1px solid rgb(160, 160, 161);
+    padding: 0.8em 1.5em;
+    border-bottom: none;
+    padding-bottom: 2px;
+}
+
+.twitter-table .table-header.details-table {
+    border-left: 24px solid rgb(85, 172, 238);
+    justify-content: start;
+}
+
+.hochladen {
+    float: right;
+    padding: 0.4em 4.2em;
+    background: #489e90;
+    border: 1px solid #489e90;
+    color: white;
+    border-radius: 8px;
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+.hochladen:hover {
+    background-color: white;
+    color: #489e90;
+    border: 1px solid #489e90;
+}
+
+.floating-list {
+    max-width: 23em;
+    width: 100%;
+    border: 1px solid #919293;
+    padding-bottom: 1em;
+    border-top: none;
+    display: none;
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    z-index: 1000;
+}
+
+#list-input {
+    border: none;
+    background: white;
+}
+
+.floating-list a {
+    color: black;
+}
+
+.floating-list a:hover {
+    color: rgb #83c7bc;
+}
+
+.floating-list .list-details {
+    background-color: rgb(248, 248, 248);
+    padding: 1em;
+    border-bottom: 1px solid #8b8c8d;
+}
+
+.list-details i:hover {
+    color: rgb(131, 199, 188);
+}
+
+.floating-list .list-text {
+    color: rgb(83, 99, 107);
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.list-header {
+    background-color: #83c7bc;
+    color: white;
+    padding: 1em 2.5em;
+}
+.social-icon-row-r.light-green.green-border{
+    padding: 0.2em;
+}
+.light-green.green-border .active-date{
+    background: #ebebeb;
+    padding: 0.3em 0.4em;
+}
+.autor tbody tr >td:first-child{
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+/* Einstellungen Page  */
+.diese-table .fa-minus {
+    font-size: 6px;
+}
+
+.social-icon .active {
+    background: #da3b30;
+    color: white;
+    border-radius: 50%;
+    padding: 0.3em 0.2em;
+    font-size: 0.7em;
+}
+
+.social-icon .fab.fa-facebook-square.active {
+    background: #43bcee;
+    color: white;
+    border-radius: 50%;
+    padding: 0.4em;
+    font-size: 0.7em;
+}
+
+.plus-neuen-autor span:hover,
+.plus-neuen-autor:hover {
+    color: #83c7bc;
+}
+
+.plus-neuen-author-td {
+    background-color: white !important;
+    text-align: right;
+    border: 0 !important;
+}
+
+.plus-neuen-autor {
+    color: #83c7bc !important;
+    font-size: 1em;
+    display: inline-block;
+    margin-bottom: 1em;
+    margin-right: 2em;
+}
+
+.autor-table.main-table.table-border .fab {
+    margin-right: 0.2em;
+
+}
+
+.kanale-table .check-point .check-box.o-circle {
+    margin-right: 0.4em;
+}
+
+.autor-table.main-table.table-border a {
+    color: rgb(102, 102, 102);
+}
+
+.fa-plus.black-plus {
+    font-size: 1.2em;
+    color: black;
+}
+
+.tab-table .fab {
+    font-size: 1.3em;
+    color: rgb(72, 158, 144);
+}
+
+.tab-table .media-text {
+    color: black;
+    font-weight: 600;
+    margin-left: 0.5em;
+    font-size: 0.9em;
+}
+
+.tab-table-bg {
+    background-color: rgb(248, 248, 248);
+    border: 1px solid #939394;
+    padding: 2.5em 1em;
+    width: 100%;
+}
+
+.tab-table .checkmark {
+    left: -6px;
+    top: -10px;
+}
+
+.tab-table td {
+    padding: 0.5em 0em;
+}
+
+.tab-table thead th {
+    color: rgb(72, 158, 144);
+}
+
+.table-header.active {
+    background-color: #83c7bc;
+    color: white;
+    border-bottom: none !important;
+}
+
+.main-table .kanal-input {
+    color: #414f4d;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.table-header.active {
+    position: relative;
+}
+
+.table-header.active::after {
+    content: '';
+    position: absolute;
+    background-color: #83c7bc;
+    width: 1.7em;
+    left: 2em;
+    top: 2.6em;
+    height: 1.7em;
+    border-bottom: 5px solid #83c7bc;
+    border-right: 5px solid #83c7bc;
+    transform: rotate(45deg);
+}
+
+.autor-table thead tr td {
+    background-color: #adbac1;
+    color: white;
+    font-size: 0.9em;
+}
+
+.autor-table .kanal-input::placeholder {
+    color: black;
+}
+
+.autor-table thead tr {
+    font-weight: 600;
+}
+
+.autor-table .kanal-input {
+    border: none;
+    background-color: rgb(248, 248, 248);
+    outline: none;
+    width: 100%;
+    font-weight: 700;
+}
+
+.autor-table .eye-input {
+    position: relative;
+}
+
+.autor-table .eye-input .far {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    cursor: pointer;
+}
+
+.autor-table a {
+    color: black;
+}
+
+.autor-table .gray-text {
+    color: rgb(65, 79, 77);
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.autor-table tbody td:nth-of-type(odd) {
+    background-color: rgb(248, 248, 248);
+}
+
+.autor-table.todo-list-table tbody td {
+    background-color: white;
+}
+
+.autor-table.todo-list-table tbody td:nth-of-type(2) {
+    background-color: rgb(248, 248, 248);
+}
+
+.autor-table td {
+    border: 1px solid rgb(132, 133, 134);
+    padding: 0.6em 0.9em;
+}
+
+.dropdown .selection i {
+    font-size: 1em;
+    color: rgb(51, 51, 51);
+}
+
+.todo-list-table .far {
+    color: #414f4d;
+    padding: 0 0.7em;
+}
+
+.kanale-tab .gray-input {
+    background-color: rgb(248, 248, 248);
+}
+
+.kanale-tab .kanale-table .twitter {
+    background-color: rgb(85, 172, 238);
+}
+
+.kanale-tab .kanale-table .facbook {
+    background-color: rgb(59, 89, 153);
+}
+
+.kanale-tab .kanale-table .google {
+    background-color: red;
+}
+
+.tab-check-box-2>span {
+    display: inline-block;
+    width: 15.5em;
+}
+
+.hinweis-e-mails .hinweis-e-mails-bg {
+    background-color: rgb(248, 248, 248);
+    border: 1px solid #919293;
+    padding: 2em 4.5em;
+    width: 100%;
+    max-width: 900px;
+    margin: 3em auto;
+}
+
+.table-header {
+    cursor: pointer;
+}
+
+.tab-check-box-2 {
+    font-weight: 600;
+}
+
+/* radio-button start */
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: rgb(51, 51, 51);
+    font-weight: 600;
+}
+
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: transparent;
+}
+
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: rgb(72, 158, 144);
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked)+label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+[type="radio"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* radio-button end */
+.kanale-tab .kanale-table td {
+    padding: 0.5 1em;
+}
+
+.tabs {
+    display: none;
+}
+
+.tabs-2 {
+    display: none;
+}
+
+.kanale-tab .kanale-table .fa-pencil-alt {
+    font-size: 1em;
+    background: rgba(83, 99, 107, 0.9);
+    color: white;
+    padding: 0.5em;
+    border-radius: 50%;
+}
+
+.kanale-tab .editer {
+    text-align: right;
+}
+
+.neuen-ideen .text {
+    color: rgb(83, 100, 107);
+    font-weight: 600;
+}
+
+.neuen-ideen .text:hover {
+    color: rgb(72, 158, 144);
+}
+.gray-color.email-text{
+    color: rgb(51, 51, 51);
+}
+/* Ideen_Sameln_final Page */
+.autor-table.main-table .gray-bg {
+    background-color: rgb(248, 248, 248)
+}
+
+.form-control.table-inputs.gray-input.dark-bg {
+    background: rgb(235, 235, 235);
+}
+
+.ideen-table {
+    margin-bottom: 0;
+}
+
+.ideen-table tbody .odd-border-bottom td {
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+
+.ideen-table tbody .odd-border-bottom tr>td:first-child {
+    border-left: 1px solid rgb(51, 51, 51);
+}
+
+.ideen-table .odd-border-bottom .form-control.table-inputs {
+    font-size: 0.9em;
+}
+
+.ideen-table-2 .form-control.table-inputs {
+    font-size: 0.9em;
+}
+
+.ideen-table tbody tr td {
+    border-right: none;
+    border-left: none;
+}
+
+.ideen-table tbody>tr:first-child {
+    color: rgb(121, 138, 147);
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+.ideen-table tbody>tr:last-child {
+    border-left: 1px solid rgb(133, 134, 135);
+    border-right: 1px solid rgb(133, 134, 135);
+}
+
+.ideen-table .cancel {
+    text-align: center;
+    line-height: 1.9;
+}
+
+.ideen-table.autor-table .fas-times {
+    font-size: 1.2em;
+    color: rgb(83, 99, 107);
+}
+
+.ideen-table.kanale-tab tbody tr td:nth-last-of-type(even) {
+    background-color: rgb(235, 235, 235);
+}
+
+.neuen-ideen:hover {
+    color: rgb(72, 158, 144);
+}
+
+.ideen-table.kanale-tab tbody tr td:nth-last-of-type(odd) {
+    background-color: rgb(248, 248, 248);
+}
+
+.main-table.kanale-tab.ideen-table-2 tbody tr td {
+    padding: 0.3em 2.5em;
+}
+
+.table.main-table.kanale-tab.ideen-table-2 tbody tr>td:last-child {
+    background-color: white;
+}
+
+.table.main-table.kanale-tab.ideen-table-2 tbody tr>td:first-child {
+    padding-top: 12px;
+    font-size: 0.9em;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+}
+
+.table-borders {
+    border: 1px solid rgb(133, 134, 135);
+    padding: 2em;
+    background-color: rgb(248, 248, 248);
+    padding-bottom: 4em;
+    border-top: none;
+}
+
+.dropdown-input {
+    position: relative;
+}
+
+.dropdown-icon {
+    position: absolute;
+    right: 2em;
+    top: 3.3em;
+    color: #707070 !important;
+}
+
+/* Projekte_Verwalten Page */
+.card {
+    background-color: rgb(248, 248, 248);
+}
+.card .card-body.card-border {
+    border: 1px solid #919293;
+    border-top: none;
+}
+.card-body .date:hover{
+    color: rgba(131, 199, 188, 0.6);
+}
+.card-body .date{
+ transition: 200ms ease-in-out;
+}
+.card .card-header {
+    display: flex;
+    background-color: rgb(0, 161, 89);
+    align-items: center;
+    border: 1px solid rgb(200, 200, 200) !important;
+}
+
+.card .card-header .fas {
+    font-size: 0.9em;
+    background: rgba(66, 11, 103, 0.5);
+    color: rgb(216, 226, 235);
+    padding: 0.5em;
+    border-radius: 50%;
+    transition: 200ms ease-in-out;
+    border: 2px solid rgb(145, 146, 147);
+}
+.card {
+    border: none !important;
+}
+
+.card .fa-trash-alt {
+    color: rgb(83, 99, 107);
+    transition: 200ms ease-in-out;
+}
+
+.card .fa-trash-alt:hover {
+    color: rgb(51, 51, 51);
+}
+
+.card-header .fas:hover {
+    background: #83c7bc;
+    border-radius: 50%;
+    color: white;
+}
+
+.card .date {
+    color: #83c7bc;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.card .card-2 {
+    background-color: rgb(145, 23, 91);
+}
+.card .card-3 {
+    background-color: rgb(248, 248, 248);
+}
+.card-body.project-card {
+    border: 1px solid #919293;
+    height: calc(100% - 54px) !important;
+    border-top: none;
+}
+.card .card-3 .light-gray {
+    color: rgb(200, 201, 201);
+}
+.card .farbe-andern {
+    color: white;
+    font-size: 0.8em;
+    transition: 200ms ease-in-out;
+    margin-left: auto;
+}
+.card .farbe-andern:hover{
+  color: rgb(131, 199, 188);
+}
+.card-3 .card-3-input {
+    border: none;
+    box-shadow: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: transparent;
+    /* color: #fff; */
+}
+
+.card-3 .card-3-input:focus {
+    outline-style: none;
+}
+
+.card-3 input::placeholder {
+    color: rgb(200, 201, 201);
+}
+
+.header-input {
+    background: transparent;
+    border: none;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 600;
+}
+
+.header-input:focus {
+    outline: none;
+}
+
+.header-input-title,
+.header-input {
+    width: 180px;
+    height: 28px;
+}
+
+.add-neuen-table {
+    display: none;
+}
+
+.custom-picker-parent>input.jscolor {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.list-details>input.list-text {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.table-bordered.diese-table th,
+.table-bordered.diese-table td {
+    border-color: #8b8c8d !important;
+    border-left: 0;
+    border-right: 0;
+}
+
+.table-bordered.diese-table th {
+    border-bottom: 0 !important;
+}
+
+.todo-list-tab {
+    position: relative;
+}
+
+.card.new-project-card {
+    display: none;
+}
+
+.create-new-project-card .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 200ms all ease-in-out;
+    border: 1px solid #919293;
+}
+.create-new-project-card .card-body:hover {
+    background-color: #4F646C;
+}
+
+.create-new-project-card .content h3 {
+    color: #c8c9c9;
+}
+
+.create-new-project-card .content i {
+    color: #c8c9c9;
+    font-size: 1.5em;
+}
+
+.autor-table .open-floating-list-parent {
+    border-left: 0 !important;
+    padding: 0 !important;
+}
+
+.autor-table .actions-cell {
+    border-right: 0;
+}
+
+.autor-table i:hover {
+    color: rgb(131, 199, 188);
+}
+
+.autor-table .open-floating-list-parent.active {
+    background-color: #83c7bc !important;
+}
+
+.autor-table .open-floating-list-parent.active>a>i {
+    color: white;
+}
+
+.floating-list .add-button {
+    cursor: pointer;
+}

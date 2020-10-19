@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideen_Sameln_final</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="header">
+        <!-- Added and Modified-->
+        <div class="brand">
+            <img style="height: 45px;" src="./img/logo.png" alt="">
+            <h5 class="brand-name text-white ml-2 d-inline">CONTENT<strong> PLANNER</strong></h5>
+        </div>
+        <div class="search-area ml-5">
+            <input class="search-area-input" type="text" name="" id="" placeholder="Suchen">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="dropdown-color">
+            <div class="color-picker bg-green"></div>
+            <div class="dropdown ml-5">
+                <button class="header-dropdown btn btn-light dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    firmenkontor24 <i class="fas fa-chevron-down ml-3"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="#">Firma2</a>
+                    <a class="dropdown-item" href="#">Firma3</a>
+                    <a class="dropdown-item" href="#">Firma4</a>
+                </div>
+            </div>
+        </div>
+        <div class="logout">
+            <a class="link mr-3" href="#">
+                <i class="fas fa-cog"></i>
+            </a>
+            <a class="link" href="#">
+                Logout
+            </a>
+        </div>
+    </div>
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col">
+                <div class="top-links">
+                    <a class="link" href="Aktuelle_Beitrage.html">Aktuelle Beiträge</a>
+                    <a class="link" href="Alle_Beitrage.html">Alle Beiräge</a>
+                    <a class="link active" href="Ideen_Sameln_final.html">Ideen Sameln</a>
+                    <a class="link" href="Einstellungen.html">Einstellungen</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row px-3">
+            <div class="col-md-4 mt-5">
+                <div class="menu-bar">
+                    <div class="table-header gray-header data-table-header">
+                        <h6 class="ml-3 mb-0 info-heading">Autoren</h6>
+                    </div>
+                    <div class="check-boxs">
+                        <div class="check-box">
+                            <label class="container-checkbox gray-color">Daniel
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="check-box">
+                            <label class="container-checkbox gray-color">Nicole
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="check-box">
+                            <label class="container-checkbox gray-color">Autor 3
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="check-box">
+                            <label class="container-checkbox gray-color">Autor 4
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="check-box">
+                            <label class="container-checkbox gray-color">Autor 5
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-bar mt-4">
+                    <div class="table-header gray-header data-table-header">
+                        <h6 class="ml-3 mb-0 info-heading">Kanäle</h6>
+                    </div>
+                    <div class="check-boxs">
+                        <div class="check-box">
+                            <label class="container-checkbox gray-color">Twitter
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="check-box">
+                            <label class="container-checkbox gray-color">Facebook
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="check-box">
+                            <label class="container-checkbox gray-color">Instagramm
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="check-box">
+                            <label class="container-checkbox gray-color">Xing
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="check-box">
+                            <label class="container-checkbox gray-color">Pinterest
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8 mt-5 pb-4">
+                <div class="main-table">
+                    <div class="table-header data-table-header">
+                        <h5 class="green-color ml-3 mb-0 bold-text">GESPEICHERTE IDEEN</h5>
+                        <a class="plus-neuen-autor mb-0 mx-3" href="#">
+                            <i class="fas fa-plus-square mr-1"></i>
+                            <span class="gray-color">Neuen Idee</span>
+                        </a>
+                    </div>
+                    <!-- table 1 diese start -->
+                    <table class="table diese-table table-bordered gespeicherte-table">
+                        <colgroup>
+                            <col width="10%">
+                            <col width="50%">
+                            <col width="40%">
+                            <col width="10%">
+
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>Kanal</th>
+                                <th>Titel</th>
+                                <th>Autor</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="google-box"><i class="fab fa-google-plus-g"></i></td>
+                                <td>Produktvorstellung FK24</td>
+                                <td>Daniel</td>
+                                <td class="add-box">
+                                    <a href="#">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="google-box twitter"><i class="fab fa-twitter"></i></td>
+                                <td>Produktvorstellung FK24</td>
+                                <td>Nicole</td>
+                                <td class="add-box active">
+                                    <a href="#">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="google-box face-book"><i class="fab fa-facebook-square"></i></td>
+                                <td>Produktvorstellung FK24</td>
+                                <td>Daniel</td>
+                                <td class="add-box">
+                                    <a href="#">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="text-center">
+                                    <a href="" style="font-size: 1.2em; color: #9fa7ab;" class="add-neuen-button">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- table 1 diese end -->
+                    <!-- table 2 start -->
+                    <div class="hide-table add-neuen-table">
+                        <table class="table autor-table main-table kanale-tab ideen-table">
+                            <tbody>
+                                <tr>
+                                    <td>Kanal</td>
+                                    <td>Titel</td>
+                                    <td>Autor</td>
+                                    <td>Details</td>
+                                </tr>
+                                <tr class="odd-border-bottom">
+                                    <td>--</td>
+                                    <td>
+                                        <input type="text" class="form-control table-inputs gray-input gray-bg"
+                                            placeholder="Produk">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control table-inputs gray-input dark-bg"
+                                            placeholder="--">
+                                    </td>
+                                    <td class="cancel">
+                                        <a class="fas-times close-neuen-table" href="#">
+                                            <i class="fas fa-times"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="table-borders">
+                            <table class="table autor-table main-table kanale-tab ideen-table-2">
+                                <colgroup>
+                                    <col width="30%">
+                                    <col width="70%">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>Titel</td>
+                                        <td>
+                                            <input type="text" class="form-control table-inputs" placeholder="Produk">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Autor</td>
+                                        <td>
+                                            <input type="text" class="form-control table-inputs" placeholder="--">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kanal</td>
+                                        <td class="dropdown-input">
+                                            <input type="text" class="form-control table-inputs" placeholder="--">
+                                            <a class="dropdown-icon" href="#">
+                                                <i class="fas fa-angle-down"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Stichpunkte</td>
+                                        <td>
+                                            <input type="text" class="form-control table-inputs" placeholder="--">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mögliche Quellen</td>
+                                        <td>
+                                            <input type="text" class="form-control table-inputs" placeholder="--">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mögliche Kategorien</td>
+                                        <td>
+                                            <input type="text" class="form-control table-inputs" placeholder="--">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="mt-1 hochladen">Als Beitrag Anlegen</button>
+                        </div>
+                    </div>
+                    <!-- table 2 end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/Ideen_Sameln_final.js"></script>
+</body>
+
+</html>

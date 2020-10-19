@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail_Seite</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="header">
+        <!-- Added and Modified-->
+        <div class="brand">
+            <img style="height: 45px;" src="./img/logo.png" alt="">
+            <h5 class="brand-name text-white ml-2 d-inline">CONTENT<strong> PLANNER</strong></h5>
+        </div>
+        <div class="search-area ml-5">
+            <input class="search-area-input" type="text" name="" id="" placeholder="Suchen">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="dropdown-color">
+            <div class="color-picker bg-green"></div>
+            <div class="dropdown ml-5">
+                <button class="btn btn-light dropdown-toggle header-dropdown" type="button" id="triggerId" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    firmenkontor24 <i class="fas fa-chevron-down ml-3"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="#">Firma2</a>
+                    <a class="dropdown-item" href="#">Firma3</a>
+                    <a class="dropdown-item" href="#">Firma4</a>
+                </div>
+            </div>
+        </div>
+        <div class="logout">
+            <a class="link mr-3" href="#">
+                <i class="fas fa-cog"></i>
+            </a>
+            <a class="link" href="#">
+                Logout
+            </a>
+        </div>
+    </div>
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col">
+                <div class="top-links">
+                    <a class="link active" href="Aktuelle_Beitrage.html">Aktuelle Beiträge</a>
+                    <a class="link" href="Alle_Beitrage.html">Alle Beiräge</a>
+                    <a class="link" href="Ideen_Sameln_final.html">Ideen Sameln</a>
+                    <a class="link" href="Einstellungen.html">Einstellungen</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row px-3">
+            <div class="col-md-4 mt-4 pr-0">
+                <div class="side-menu">
+                    <div class="floating-icons">
+                        <a href="#">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-snapchat-ghost"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-xing"></i>
+                        </a>
+                    </div>
+                    <div class="calender-bar">
+                        <div class="table-calender mt-4">
+                            <a href="#">
+                                <img class="calender-img" src="./img/arrow-left.png" alt="">
+                            </a>
+                            <h5 class="calender-date mt-1">Januar 2018</h5>
+                            <a href="#">
+                                <img class="calender-img" src="./img/arrow-right.png" alt="">
+                            </a>
+                        </div>
+                        <table class="table date-table table-bordered">
+                            <colgroup>
+                                <col width="14.2%">
+                                <col width="14.2%">
+                                <col width="14.2%">
+                                <col width="14.2%">
+                                <col width="14.2%">
+                                <col width="14.2%">
+                                <col width="14.2%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>SO</th>
+                                    <th>MO</th>
+                                    <th>DI</th>
+                                    <th>MI</th>
+                                    <th>DO</th>
+                                    <th>FR</th>
+                                    <th>SA</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td class="social-icon-row-g light-green">
+                                        <div class="num">9</div>
+                                        <div class="social-icon">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-facebook-square"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>10</td>
+                                    <td class="social-icon-row-g light-green">
+                                        <div class="num">11</div>
+                                        <div class="social-icon">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>12</td>
+                                    <td class="social-icon-row-g light-green">
+                                        <div class="num">13</div>
+                                        <div class="social-icon">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>14</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td class="social-icon-row-g light-green">
+                                        <div class="num">16</div>
+                                        <div class="social-icon">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-facebook-square"></i>
+                                            </a>
+                                            <span class="badge badge-light">2</span>
+                                        </div>
+                                    </td>
+                                    <td>17</td>
+                                    <td class="social-icon-row-y light-green">
+                                        <div class="num">18</div>
+                                        <div class="social-icon">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-facebook-square"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>19</td>
+                                    <td class="social-icon-row-y light-green">
+                                        <div class="num">20</div>
+                                        <div class="social-icon">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>21</td>
+                                </tr>
+                                <tr>
+                                    <td>22</td>
+                                    <td class="social-icon-row-y light-green">
+                                        <div class="num">23</div>
+                                        <div class="social-icon">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-facebook-square"></i>
+                                            </a>
+                                            <span class="badge badge-light">2</span>
+                                        </div>
+                                    </td>
+                                    <td>24</td>
+                                    <td class="social-icon-row-r light-green">
+                                        <div class="num">25</div>
+                                        <div class="social-icon">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-facebook-square"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>26</td>
+                                    <td class="social-icon-row-r light-green">
+                                        <div class="num">27</div>
+                                        <div class="social-icon">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>28</td>
+                                </tr>
+                                <tr>
+                                    <td>29</td>
+                                    <td class="social-icon-row-r light-green green-border">
+                                        <div class="active-date">
+                                            <div class="num">30</div>
+                                            <div class="social-icon">
+                                                <a href="#">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fab fa-facebook-square"></i>
+                                                </a>
+                                                <span class="badge badge-light">2</span>
+                                            </div>
+                                    </div>
+                                    </td>
+                                    <td>31</td>
+                                    <td class="light-gray">1</td>
+                                    <td class="light-gray">2</td>
+                                    <td class="light-gray">3</td>
+                                    <td class="light-gray">4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <table class="calender-menu">
+                        <colgroup>
+                            <col width='50%'>
+                            <col width='50%'>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Veröff. am:
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="header-dropdown btn btn-light selection dropdown-toggle calender-dropdown type="
+                                            button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            TT/MM/JJJJ <i class="fas fa-chevron-down autor-icon ml-4"></i>
+                                        </button>
+                                        <div class="dropdown-menu calender-menu" aria-labelledby="triggerId">
+                                            <a class="dropdown-item" href="#">Firma2</a>
+                                            <a class="dropdown-item" href="#">Firma3</a>
+                                            <a class="dropdown-item" href="#">Firma4</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Start:
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="header-dropdown btn btn-light selection dropdown-toggle calender-dropdown"
+                                            type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            TT/MM/JJJJ <i class="fas fa-chevron-down autor-icon ml-4"></i>
+                                        </button>
+                                        <div class="dropdown-menu calender-menu" aria-labelledby="triggerId">
+                                            <a class="dropdown-item" href="#">Firma2</a>
+                                            <a class="dropdown-item" href="#">Firma3</a>
+                                            <a class="dropdown-item" href="#">Firma4</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Deadline:
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="header-dropdown btn btn-light selection dropdown-toggle calender-dropdown"
+                                            type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            31/01/2018 <i class="fas fa-chevron-down autor-icon ml-3"></i>
+                                        </button>
+                                        <div class="dropdown-menu calender-menu" aria-labelledby="triggerId">
+                                            <a class="dropdown-item" href="#">Firma2</a>
+                                            <a class="dropdown-item" href="#">Firma3</a>
+                                            <a class="dropdown-item" href="#">Firma4</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-md-8 mt-5 pb-4">
+                <div class="main-table">
+                    <div class="table-header details-table">
+                        <h5 class="green-color ml-3 mb-0 bold-text">EINTRAG DETAILS</h5>
+                    </div>
+                    <table class="autor">
+                        <tbody>
+                            <colgroup>
+                                <col width="15%" style="background-color: rgb(248, 248 ,248);">
+                                <col width="30%">
+                                <col width="15%" style="background-color: rgb(248, 248 ,248);">
+                                <col width="40%">
+                            </colgroup>
+                            <tr>
+                                <td>Titel</td>
+                                <td colspan="3"><input type="text" class="form-control table-inputs"
+                                        placeholder="Neues produkt kommt auf dem Markt"></td>
+                            </tr>
+                            <tr>
+                                <td>Autor</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="header-dropdown btn btn-light selection dropdown-toggle table-dropdown text-left"
+                                            type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Daniel <i class="fas fa-chevron-down autor-icon"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                                            <a class="dropdown-item" href="#">Firma2</a>
+                                            <a class="dropdown-item" href="#">Firma3</a>
+                                            <a class="dropdown-item" href="#">Firma4</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><strong>Kanal</strong></td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="header-dropdown btn btn-light selection dropdown-toggle table-dropdown text-left"
+                                            type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Twitter <i style="font-size: 1.4em; color: #55acee;"
+                                                class="ml-1 fab fa-twitter"></i>
+                                                <i class="fas fa-chevron-down autor-icon"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                                            <a class="dropdown-item" href="#">Firma2</a>
+                                            <a class="dropdown-item" href="#">Firma3</a>
+                                            <a class="dropdown-item" href="#">Firma4</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="row no-gutters lists-border">
+                        <div class="col-md-4">
+                            <div class="table-header details-table same-header-bg">
+                                <h6 class="ml-3 mb-0 info-heading">Status des Beitrags</h6>
+                            </div>
+                            <table class="status-table" style="width: 100%;">
+                                <colgroup>
+                                    <col style="background-color: rgb(248, 248 ,248);">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <i class="far fa-image"></i>
+                                            <strong class="ml-1">Bild</strong> 
+                                        </td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button
+                                                    class="header-dropdown btn btn-light selection dropdown-toggle table-dropdown text-left type="
+                                                    button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    <span class="green-point"></span>
+                                                    <span class="text">Fertig</span>
+                                                    <i class="fas fa-chevron-down autor-icon"></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="triggerId">
+                                                    <a class="dropdown-item" href="#">Firma2</a>
+                                                    <a class="dropdown-item" href="#">Firma3</a>
+                                                    <a class="dropdown-item" href="#">Firma4</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="far fa-file-alt"></i>
+                                          <strong class="ml-1">Text</strong>  
+                                        </td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button
+                                                    class="header-dropdown btn btn-light selection dropdown-toggle table-dropdown text-left type="
+                                                    button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+
+                                                    <span class="green-point"></span>
+                                                    <span class="text">Fertig</span>
+                                                    <i class="fas fa-chevron-down autor-icon"></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="triggerId">
+                                                    <a class="dropdown-item" href="#">Firma2</a>
+                                                    <a class="dropdown-item" href="#">Firma3</a>
+                                                    <a class="dropdown-item" href="#">Firma4</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="table-header details-table same-header-bg">
+                                <h6 class="ml-3 mb-0 info-heading">To Do Liste</h6>
+                            </div>
+                            <div id="todo-list" class="todo-list">
+                                <div class="check-box">
+                                    <label class="container-checkbox todo-list-text"><span
+                                            class="gray-color">Bild</span> gefunden
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="check-box">
+                                    <label class="container-checkbox todo-list-text"><span
+                                            class="gray-color">Quellen</span> recherchiert
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="check-box">
+                                    <label class="container-checkbox todo-list-text"><span
+                                            class="gray-color">Keywords</span> überlegt
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="check-box">
+                                    <label class="container-checkbox todo-list-text"><span
+                                            class="gray-color">Keyword-Dichte</span> berechnet
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="check-box">
+                                    <label class="container-checkbox todo-list-text"><span class="gray-color">Text
+                                            Korrektur</span> lesen lassen
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="todo-list-adder">
+                                <a href="#">
+                                    <i class="fas fa-plus-square"></i>
+                                </a>
+                                <div class="weiteres d-flex">
+                                    <input class="weiteres-input" type="text" placeholder="Weiteres To Do">
+                                    <a class="ok-button" href="#">ok</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="table-header details-table same-header-bg">
+                                <h6 class="ml-3 mb-0 info-heading">Notitzen</h6>
+                            </div>
+                            <div class="todo-list notitzen">
+                                <textarea class="form-control notizen-text-area" name="" id="" cols="10"
+                                    placeholder="text"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-table twitter-table mt-5">
+                    <div class="table-header details-table">
+                        <a href="#">
+                            <i class="mx-3 fab fa-twitter"></i>
+                        </a>
+                        <h5 class="mb-0 twitter-name" style="color: rgb(85, 172, 238); font-weight: 600;">TWITTER</h5>
+                    </div>
+                    <table class="autor">
+                        <colgroup>
+                            <col width="26%" style="background-color: rgb(248, 248 ,248);">
+                            <col width="74%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>Kategorie</td>
+                                <td colspan="3"><input type="text" class="form-control table-inputs"
+                                        placeholder="Neues produkt kommt auf dem Markt"></td>
+                            </tr>
+                            <tr>
+                                <td>Text</td>
+                                <td><textarea class="form-control table-inputs"
+                                        placeholder="Neues produkt kommt auf dem Markt" name="" id="" cols="10"
+                                        rows="6"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Speicherort Bild</td>
+                                <td colspan="3"><input type="text" class="form-control table-inputs"
+                                        placeholder="Neues produkt kommt auf dem Markt"></td>
+                            </tr>
+                            <tr>
+                                <td>Link</td>
+                                <td colspan="3"><input type="text" class="form-control table-inputs"
+                                        placeholder="Neues produkt kommt auf dem Markt"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="main-table twitter-table mt-5">
+                    <div class="table-header details-table" style="border-left: 24px solid #83c7bc;">
+                        <a href="#">
+                            <i class=" ml-3 far fa-lightbulb" style="font-size: 1.4em; color: #83c7bc;"></i>
+                        </a>
+                        <h5 class="green-color ml-3 mb-0 bold-text">AUS DER IDEENSAMMLUNG</h5>
+                    </div>
+                    <table class="autor">
+                        <colgroup>
+                            <col width="26%" style="background-color: rgb(248, 248 ,248);">
+                            <col width="74%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>Stichpunkte</td>
+                                <td colspan="3"><input type="text" class="form-control table-inputs"
+                                        placeholder="Neues produkt kommt auf dem Markt"></td>
+                            </tr>
+                            <tr>
+                                <td>Speicherort Bild</td>
+                                <td colspan="3"><input type="text" class="form-control table-inputs"
+                                        placeholder="Neues produkt kommt auf dem Markt"></td>
+                            </tr>
+                            <tr>
+                                <td>Link</td>
+                                <td colspan="3"><input type="text" class="form-control table-inputs"
+                                        placeholder="Neues produkt kommt auf dem Markt"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button class="mt-4 hochladen">Eintrag Hochladen</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/detail-seite.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

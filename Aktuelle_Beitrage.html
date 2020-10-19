@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktuelle_Beitrage</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="header">
+        <!-- Added and Modified-->
+        <div class="brand">
+            <img style="height: 45px;" src="./img/logo.png" alt="">
+            <h5 class="brand-name text-white ml-2 d-inline">CONTENT<strong> PLANNER</strong></h5>
+        </div>
+        <div class="search-area ml-5">
+            <input class="search-area-input" type="text" name="" id="" placeholder="Suchen">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="dropdown-color">
+            <div class="color-picker bg-green"></div>
+            <div class="dropdown ml-5">
+                <button class="btn btn-light dropdown-toggle header-dropdown" type="button" id="triggerId" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    firmenkontor24 <i class="fas fa-chevron-down ml-3"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="#">Firma2</a>
+                    <a class="dropdown-item" href="#">Firma3</a>
+                    <a class="dropdown-item" href="#">Firma4</a>
+                </div>
+            </div>
+        </div>
+        <div class="logout">
+            <a class="link mr-3" href="#">
+                <i class="fas fa-cog"></i>
+            </a>
+            <a class="link" href="#">
+                Logout
+            </a>
+        </div>
+    </div>
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col">
+                <div class="top-links">
+                    <a class="link active" href="Aktuelle_Beitrage.html">Aktuelle Beiträge</a>
+                    <a class="link" href="Alle_Beitrage.html">Alle Beiräge</a>
+                    <a class="link" href="Ideen_Sameln_final.html">Ideen Sameln</a>
+                    <a class="link" href="Einstellungen.html">Einstellungen</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row px-3">
+            <div class="col-md-4 mt-5">
+                <div class="side-menu">
+                    <div class="floating-icons">
+                        <a href="#">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-snapchat-ghost"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-xing"></i>
+                        </a>
+                    </div>
+                    <div class="calender-bar">
+                        <div class="dropdowns">
+                            <div class="dropdown">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="triggerId"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Jeder Status <i class="fas fa-chevron-down ml-3"></i>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="triggerId">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </div>
+                            </div>
+                            <div class="dropdown ml-2">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="triggerId"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Alle kanäle <i class="fas fa-chevron-down ml-3"></i>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="triggerId">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-calender mt-3">
+                            <a href="#">
+                                <img class="calender-img" src="./img/arrow-left.png" alt="">
+                            </a>
+                            <h5 class="mt-1 calender-date">Januar 2018</h5>
+                            <a href="#">
+                                <img class="calender-img" src="./img/arrow-right.png" alt="">
+                            </a>
+                        </div>
+                        <table class="table date-table table-bordered">
+                            <colgroup>
+                                <col width="14.2%">
+                                <col width="14.2%">
+                                <col width="14.2%">
+                                <col width="14.2%">
+                                <col width="14.2%">
+                                <col width="14.2%">
+                                <col width="14.2%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>SO</th>
+                                    <th>MO</th>
+                                    <th>DI</th>
+                                    <th>MI</th>
+                                    <th>DO</th>
+                                    <th>FR</th>
+                                    <th>SA</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td class="social-icon-row-g">
+                                        <div class="num">9</div>
+                                        <div class="social-icon">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-facebook-square"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>10</td>
+                                    <td class="social-icon-row-g">
+                                        <div class="num">11</div>
+                                        <div class="social-icon">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>12</td>
+                                    <td class="social-icon-row-g">
+                                        <div class="num">13</div>
+                                        <div class="social-icon">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>14</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td class="social-icon-row-g">
+                                        <div class="num">16</div>
+                                        <div class="social-icon">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-facebook-square"></i>
+                                            </a>
+                                            <span class="badge badge-light">2</span>
+                                        </div>
+                                    </td>
+                                    <td>17</td>
+                                    <td class="social-icon-row-y">
+                                        <div class="num">18</div>
+                                        <div class="social-icon">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-facebook-square"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>19</td>
+                                    <td class="social-icon-row-y">
+                                        <div class="num">20</div>
+                                        <div class="social-icon">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>21</td>
+                                </tr>
+                                <tr>
+                                    <td>22</td>
+                                    <td class="social-icon-row-y">
+                                        <div class="num">23</div>
+                                        <div class="social-icon">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-facebook-square"></i>
+                                            </a>
+                                            <span class="badge badge-light">2</span>
+                                        </div>
+                                    </td>
+                                    <td>24</td>
+                                    <td class="social-icon-row-r">
+                                        <div class="num">25</div>
+                                        <div class="social-icon">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-facebook-square"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>26</td>
+                                    <td class="social-icon-row-r">
+                                        <div class="num">27</div>
+                                        <div class="social-icon">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>28</td>
+                                </tr>
+                                <tr>
+                                    <td>29</td>
+                                    <td class="social-icon-row-r">
+                                        <div class="num">30</div>
+                                        <div class="social-icon">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-facebook-square"></i>
+                                            </a>
+                                            <span class="badge badge-light">2</span>
+                                        </div>
+                                    </td>
+                                    <td>31</td>
+                                    <td class="light-gray">1</td>
+                                    <td class="light-gray">2</td>
+                                    <td class="light-gray">3</td>
+                                    <td class="light-gray">4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="project-card">
+                        <h4 class="green-color green mb-2">Mein geplanntes projekt:</h4>
+                        <span class="firmenkontor24">firmenkontor 24</span>
+                        <h4 class="green-color green mb-2">Meine Kanäle:</h4>
+                        <div class="social-media">
+                            <a href="#">
+                                <i class="fab fa-google-plus-g green-color green"></i>
+                                <span class="ml-2 project-card-text">Google +</span>
+                            </a>
+                            <a class="text ml-4 green-color" href="#">
+                                22.12.2017
+                            </a>
+                        </div>
+                        <div class="social-media my-2">
+                            <a href="#">
+                                <i class="fab fa-twitter green-color green"></i>
+                                <span class="ml-3 project-card-text">Twitter</span>
+                            </a>
+                            <a class="text ml-5 green-color" href="#">
+                                13.01.2018
+                            </a>
+                        </div>
+                        <div class="social-media pb-4">
+                            <a href="#">
+                                <i class="fab fa-facebook-square green-color green"></i>
+                                <span class="project-card-text ml-3">Facebook</span>
+                            </a>
+                            <a class="text ml-4 green-color" href="#">
+                                16.01.2018
+                            </a>
+                        </div>
+                    </div>
+                    <div class="beitrag ml-4">
+                        <div class="check-point mt-4">
+                            <div class="check-box green"></div>
+                            <div class="text">Beitrag fertig</div>
+                        </div>
+                        <div class="check-point">
+                            <div class="check-box red"></div>
+                            <div class="text">Beitrag geplannt, nicht fertig</div>
+                        </div>
+                        <div class="check-point">
+                            <div class="check-box yellow"></div>
+                            <div class="text">Veröfentlichungs geplannt</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8 mt-5">
+                <div class="main-table">
+                    <div class="table-header data-table-header">
+                        <h5 class="green-color ml-3 mb-0 bold-text">DIESE WOCHE</h5>
+                        <div class="check-boxs d-flex">
+                            <div class="check-box green">
+                                <label class="container-checkbox table-checkbox">Fertig
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="check-box yellow mx-3">
+                                <label class="container-checkbox table-checkbox">In Bearbeitung
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="check-box red">
+                                <label class="container-checkbox table-checkbox">Offen
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <a class="table-link" href="#">
+                            <span class="text">Alle Beiträge</span>
+                            <i class="fas fa-chevron-right ml-1"></i>
+                        </a>
+                    </div>
+                    <table class="table diese-table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Kanal</th>
+                                <th>Status</th>
+                                <th>Veröff</th>
+                                <th>Start</th>
+                                <th>Deadline</th>
+                                <th>Titel</th>
+                                <th>Autor</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="google-box">
+                                    <a href="#">
+                                        <i class="fab fa-google-plus-g"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="check-point">
+                                        <div class="check-box green o-circle"></div>
+                                        <div class="text">Fertig</div>
+                                    </div>
+                                </td>
+                                <td>TT/MM/JJJJ</td>
+                                <td>TT/MM/JJJJ</td>
+                                <td>TT/MM/JJJJ</td>
+                                <td>Produktvorstellung FK24</td>
+                                <td>Daniel</td>
+                                <td class="add-box">
+                                    <a href="#">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="google-box twitter">
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="check-point">
+                                        <div class="check-box yellow o-circle"></div>
+                                        <div class="text">In Bearbetung</div>
+                                    </div>
+                                </td>
+                                <td>TT/MM/JJJJ</td>
+                                <td>TT/MM/JJJJ</td>
+                                <td>TT/MM/JJJJ</td>
+                                <td>Produktvorstellung FK24</td>
+                                <td>Daniel</td>
+                                <td class="add-box active">
+                                    <a href="#">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="google-box face-book">
+                                    <a href="#">
+                                        <i class="fab fa-facebook-square"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="check-point">
+                                        <div class="check-box red o-circle"></div>
+                                        <div class="text">Offen</div>
+                                    </div>
+                                </td>
+                                <td>TT/MM/JJJJ</td>
+                                <td>TT/MM/JJJJ</td>
+                                <td>TT/MM/JJJJ</td>
+                                <td>Produktvorstellung FK24</td>
+                                <td>Daniel</td>
+                                <td class="add-box">
+                                    <a href="#">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="main-table mt-5">
+                    <div class="table-header data-table-header">
+                        <h5 class="green-color ml-3 mb-0 bold-text">DIESE WOCHE</h5>
+                        <div class="check-boxs d-flex">
+                            <div class="check-box green">
+                                <label class="container-checkbox table-checkbox">Fertig
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="check-box yellow mx-3">
+                                <label class="container-checkbox table-checkbox">In Bearbeitung
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="check-box red">
+                                <label class="container-checkbox table-checkbox">Offen
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <a class="table-link" href="#">
+                            <span class="text">Alle Beiträge</span>
+                            <i class="fas fa-chevron-right ml-1"></i>
+                        </a>
+                    </div>
+                    <table class="table diese-table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Kanal</th>
+                                <th>Status</th>
+                                <th>Veröff</th>
+                                <th>Start</th>
+                                <th>Deadline</th>
+                                <th>Titel</th>
+                                <th>Autor</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="google-box">
+                                    <a href="#">
+                                        <i class="fab fa-google-plus-g"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="check-point">
+                                        <div class="check-box green o-circle"></div>
+                                        <div class="text">Fertig</div>
+                                    </div>
+                                </td>
+                                <td>TT/MM/JJJJ</td>
+                                <td>TT/MM/JJJJ</td>
+                                <td>TT/MM/JJJJ</td>
+                                <td>Produktvorstellung FK24</td>
+                                <td>Daniel</td>
+                                <td class="add-box">
+                                    <a href="#">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="google-box twitter">
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="check-point">
+                                        <div class="check-box yellow o-circle"></div>
+                                        <div class="text">In Bearbetung</div>
+                                    </div>
+                                </td>
+                                <td>TT/MM/JJJJ</td>
+                                <td>TT/MM/JJJJ</td>
+                                <td>TT/MM/JJJJ</td>
+                                <td>Produktvorstellung FK24</td>
+                                <td>Daniel</td>
+                                <td class="add-box active">
+                                    <a href="#">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="google-box face-book">
+                                    <a href="#">
+                                        <i class="fab fa-facebook-square"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="check-point">
+                                        <div class="check-box red o-circle"></div>
+                                        <div class="text">Offen</div>
+                                    </div>
+                                </td>
+                                <td>TT/MM/JJJJ</td>
+                                <td>TT/MM/JJJJ</td>
+                                <td>TT/MM/JJJJ</td>
+                                <td>Produktvorstellung FK24</td>
+                                <td>Daniel</td>
+                                <td class="add-box">
+                                    <a href="#">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

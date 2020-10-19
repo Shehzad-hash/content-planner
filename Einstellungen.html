@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einstellungen</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body style="padding-bottom: 25em;">
+    <div class="header">
+        <div class="brand">
+            <img style="height: 45px;" src="./img/logo.png" alt="">
+            <h5 class="brand-name text-white ml-2 d-inline">CONTENT<strong> PLANNER</strong></h5>
+        </div>
+        <div class="search-area ml-5">
+            <input class="search-area-input" type="text" name="" id="" placeholder="Suchen">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="dropdown-color">
+            <div class="color-picker bg-green"></div>
+            <div class="dropdown ml-5">
+                <button class="header-dropdown btn btn-light dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    firmenkontor24 <i class="fas fa-chevron-down ml-3"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="#">Firma2</a>
+                    <a class="dropdown-item" href="#">Firma3</a>
+                    <a class="dropdown-item" href="#">Firma4</a>
+                </div>
+            </div>
+        </div>
+        <div class="logout">
+            <a class="link mr-3" href="#">
+                <i class="fas fa-cog"></i>
+            </a>
+            <a class="link" href="#">
+                Logout
+            </a>
+        </div>
+    </div>
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col">
+                <div class="top-links">
+                    <a class="link" href="Aktuelle_Beitrage.html">Aktuelle Beiträge</a>
+                    <a class="link" href="Alle_Beitrage.html">Alle Beiräge</a>
+                    <a class="link" href="Ideen_Sameln_final.html">Ideen Sameln</a>
+                    <a class="link active" href="Einstellungen.html">Einstellungen</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row mt-5 px-3">
+            <div class="col-md-4">
+                <div class="table-header details-table common-border active tab-head" sec=".kanale-tab">
+                    <h6 class="ml-3 mb-0">Kanäle</h6>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="table-header details-table common-border tab-head" sec=".beitrage-tab">
+                    <h6 class="ml-3 mb-0">Beiträge</h6>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="table-header details-table common-border tab-head" sec=".autoren-tab">
+                    <h6 class="ml-4 mb-0">autoren</h6>
+                </div>
+            </div>
+        </div>
+        <!-- tab-1 start -->
+        <div class="container-fluid tabs kanale-tab" style="display: block;">
+            <div class="row mt-5">
+                <div class="col">
+                    <table style="width: 100%;" class="autor-table main-table table-border kanale-table">
+                        <colgroup>
+                            <col width="10%">
+                            <col width="16%">
+                            <col width="10%">
+                            <col width="16%">
+                            <col width="16%">
+                            <col width="16%">
+                            <col width="16%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <td>Kanal</td>
+                                <td>Kanal wählen</td>
+                                <td>Farbe</td>
+                                <td>Status</td>
+                                <td>User name</td>
+                                <td>Kennwort</td>
+                                <td>Ändern</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input class="kanal-input" type="text" value="Kanal 1">
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="header-dropdown btn btn-light selection dropdown-toggle table-dropdown text-left"
+                                            type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                                Twitter <i class="fas fa-chevron-down autor-icon"></i>
+                                            </a>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                                            <a class="dropdown-item" href="#">Firma2</a>
+                                            <a class="dropdown-item" href="#">Firma3</a>
+                                            <a class="dropdown-item" href="#">Firma4</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="twitter editer custom-picker-parent" id="twitterColor">
+                                    <input class="jscolor {closable:true,closeText:'Save', styleElement:'twitterColor'}"
+                                        value="#55ACEE">
+                                    <a href="#" class="color-picker">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="check-point">
+                                        <div class="check-box green o-circle"></div>
+                                        <div class="text gray-text">Verbunden</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control table-inputs gray-input kanal-input"
+                                        value="Blarium">
+                                </td>
+                                <td>
+                                    <div class="eye-input">
+                                        <input type="password" class="form-control table-inputs" placeholder="Password">
+                                        <i class="far fa-eye"></i>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="kanal-input" href="#">
+                                        trennen
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="kanal-input" type="text" value="Kanal 2">
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="header-dropdown btn btn-light selection dropdown-toggle table-dropdown text-left"
+                                            type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            <a href="#">
+                                                <i class="fab fa-facebook-square"></i>
+                                                Facebook <i class="fas fa-chevron-down autor-icon"></i>
+                                            </a>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                                            <a class="dropdown-item" href="#">Firma2</a>
+                                            <a class="dropdown-item" href="#">Firma3</a>
+                                            <a class="dropdown-item" href="#">Firma4</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="facbook editer custom-picker-parent" id="facebookColor">
+                                    <input
+                                        class="jscolor {closable:true,closeText:'Save', styleElement:'facebookColor'}"
+                                        value="#3b5999">
+                                    <a href="#" class="color-picker">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="check-point">
+                                        <div class="check-box green o-circle"></div>
+                                        <div class="text gray-text">Verbunden</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control table-inputs gray-input kanal-input"
+                                        value="Gastronomiekarten">
+                                </td>
+                                <td>
+                                    <div class="eye-input">
+                                        <input type="password" class="form-control table-inputs" placeholder="Password">
+                                        <i class="far fa-eye"></i>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="kanal-input" href="#">
+                                        trennen
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="kanal-input" type="text" value="Kanal 3">
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="header-dropdown btn btn-light selection dropdown-toggle table-dropdown text-left"
+                                            type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                                Google <i class="fas fa-chevron-down autor-icon"></i>
+                                            </a>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                                            <a class="dropdown-item" href="#">Firma2</a>
+                                            <a class="dropdown-item" href="#">Firma3</a>
+                                            <a class="dropdown-item" href="#">Firma4</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="google editer custom-picker-parent" id="googleColor">
+                                    <input class="jscolor {closable:true,closeText:'Save', styleElement:'googleColor'}"
+                                        value="#ff0000">
+                                    <a href="#" class="color-picker">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="check-point">
+                                        <div class="check-box red o-circle"></div>
+                                        <div class="text gray-text">Nicht verbunden</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control table-inputs gray-input kanal-input"
+                                        value="Mein-Bibliothekar.de">
+                                </td>
+                                <td>
+                                    <div class="eye-input">
+                                        <input type="password" class="form-control table-inputs" placeholder="Password">
+                                        <i class="far fa-eye"></i>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="kanal-input" href="#">
+                                        verbinden
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        <i class="fas fa-plus black-plus"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button
+                                            class="header-dropdown btn btn-light selection dropdown-toggle table-dropdown text-left"
+                                            type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Wählen <i class="fas fa-chevron-down autor-icon"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                                            <a class="dropdown-item" href="#">Firma2</a>
+                                            <a class="dropdown-item" href="#">Firma3</a>
+                                            <a class="dropdown-item" href="#">Firma4</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="">
+                                    <a href="#">
+                                        <a href="#">
+                                            <i class="fas fa-plus black-plus"></i>
+                                        </a>
+                                    </a>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- tab-1 end -->
+        <!-- tab-2 start -->
+        <div class="container-fluid tabs beitrage-tab">
+            <div class="row">
+                <div class="col-md-4 mt-4">
+                    <div class="side-menu">
+                        <div class="floating-icons">
+                            <a href="#">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-snapchat-ghost"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-xing"></i>
+                            </a>
+                        </div>
+                        <div class="calender-bar">
+                            <div class="table-calender mt-4">
+                                <a href="#">
+                                    <img class="calender-img" src="./img/arrow-left.png" alt="">
+                                </a>
+                                <h5 class="calender-date mt-1">Januar 2018</h5>
+                                <a href="#">
+                                    <img class="calender-img" src="./img/arrow-right.png" alt="">
+                                </a>
+                            </div>
+                            <table class="table date-table table-bordered">
+                                <colgroup>
+                                    <col width="14.2%">
+                                    <col width="14.2%">
+                                    <col width="14.2%">
+                                    <col width="14.2%">
+                                    <col width="14.2%">
+                                    <col width="14.2%">
+                                    <col width="14.2%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>SO</th>
+                                        <th>MO</th>
+                                        <th>DI</th>
+                                        <th>MI</th>
+                                        <th>DO</th>
+                                        <th>FR</th>
+                                        <th>SA</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                        <td>7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td class="social-icon-row-g">
+                                            <div class="num">9</div>
+                                            <div class="social-icon">
+                                                <a href="#">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fab fa-facebook-square"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>10</td>
+                                        <td class="social-icon-row-g">
+                                            <div class="num">11</div>
+                                            <div class="social-icon">
+                                                <a href="#">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>12</td>
+                                        <td class="social-icon-row-g">
+                                            <div class="num">13</div>
+                                            <div class="social-icon">
+                                                <a href="#">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>14</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td class="social-icon-row-g">
+                                            <div class="num">16</div>
+                                            <div class="social-icon">
+                                                <a href="#">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fab fa-facebook-square active"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>17</td>
+                                        <td class="social-icon-row-y">
+                                            <div class="num">18</div>
+                                            <div class="social-icon">
+                                                <a href="#">
+                                                    <i class="fab fa-google-plus-g active"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>19</td>
+                                        <td class="social-icon-row-y">
+                                            <div class="num">20</div>
+                                            <div class="social-icon">
+                                                <a href="#">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>21</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22</td>
+                                        <td class="social-icon-row-y">
+                                            <div class="num">23</div>
+                                            <div class="social-icon">
+                                                <a href="#">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>24</td>
+                                        <td class="social-icon-row-r">
+                                            <div class="num">25</div>
+                                            <div class="social-icon">
+                                                <a href="#">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>26</td>
+                                        <td class="social-icon-row-r">
+                                            <div class="num">27</div>
+                                            <div class="social-icon">
+                                                <a href="#">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>28</td>
+                                    </tr>
+                                    <tr>
+                                        <td>29</td>
+                                        <td class="social-icon-row-r">
+                                            <div class="num">30</div>
+                                            <div class="social-icon">
+                                                <a href="#">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                                <span class="badge badge-light">2</span>
+                                            </div>
+                                        </td>
+                                        <td>31</td>
+                                        <td class="light-gray">1</td>
+                                        <td class="light-gray">2</td>
+                                        <td class="light-gray">3</td>
+                                        <td class="light-gray">4</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="abc float-right">
+                            <div class="check-point">
+                                <div style="background-color: rgb(67, 188, 238);" class="check-box o-circle"></div>
+                                <div class="text">Beitrag hinzugefügt</div>
+                            </div>
+                            <div class="check-point">
+                                <div style="background-color: red;" class="check-box o-circle"></div>
+                                <div class="text">Beitrag gelöscht</div>
+                            </div>
+
+                        </div>
+                        <div class="check-point">
+                            <div class="check-box green"></div>
+                            <div class="text">Beitrag fertig</div>
+                        </div>
+                        <div class="check-point">
+                            <div class="check-box red"></div>
+                            <div class="text">Beitrag geplannt, nicht fertig</div>
+                        </div>
+                        <div class="check-point">
+                            <div class="check-box yellow"></div>
+                            <div class="text">Veröfentlichungs geplannt</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 mt-5">
+                    <div class="tab-table-bg">
+                        <table style="width: 100%;" class="tab-table">
+                            <colgroup>
+                                <col width="20%">
+                                <col width="8.5%">
+                                <col width="8.5%">
+                                <col width="8.5%">
+                                <col width="8.5%">
+                                <col width="8.5%">
+                                <col width="8.5%">
+                                <col width="8.5%">
+                                <col width="20%">
+
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>KANÄL</th>
+                                    <th>MO</th>
+                                    <th>DI</th>
+                                    <th>MI</th>
+                                    <th>DO</th>
+                                    <th>FR</th>
+                                    <th>SA</th>
+                                    <th>SO</th>
+                                    <th>WIEDERHOLUNG</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="social-media">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g green-color green"></i>
+                                                <span class="media-text">Google +</span>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td> <label class="container-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td> <label class="container-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td> <label class="container-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td> <label class="container-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td> <label class="container-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td> <label class="container-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td> <label class="container-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <div class="calender-bar">
+                                            <div class="dropdown">
+                                                <button class="btn btn-light dropdown-toggle" type="button"
+                                                    id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    Wochentlich<i class="fas fa-angle-down"
+                                                        style="margin-left: 2.2em;"></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="triggerId">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="social-media">
+                                            <a href="#">
+                                                <i class="fab fa-twitter green-color green"></i>
+                                                <span class="media-text">Twitter</span>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td> <label class="container-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td> <label class="container-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td> <label class="container-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td> <label class="container-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td> <label class="container-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td> <label class="container-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td> <label class="container-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <div class="calender-bar">
+                                            <div class="dropdown">
+                                                <button class="btn btn-light dropdown-toggle pl-3" type="button"
+                                                    id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    Jede 2 Wochen <i class="fas fa-angle-down ml-2"></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="triggerId">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="social-media">
+                                            <a href="#">
+                                                <i class="fab fa-facebook-square green-color green"></i>
+                                                <span class="media-text">Facebook</span>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td> <label class="container-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td> <label class="container-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td> <label class="container-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td> <label class="container-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td> <label class="container-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td> <label class="container-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td> <label class="container-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <div class="calender-bar">
+                                            <div class="dropdown">
+                                                <button class="btn btn-light dropdown-toggle" type="button"
+                                                    id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    Monatlich <i class="fas fa-angle-down"
+                                                        style="margin-left: 3.2em;"></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="triggerId">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-check-box mt-4 ml-5">
+                        <div class="tab-check-box-2">
+                            <span class="media-text">Feiertage automatisch speren:</span>
+                            <input type="radio" id="test1" name="radio-group1" checked>
+                            <label for="test1">Ja</label>
+                            <input type="radio" id="test2" name="radio-group1" checked>
+                            <label class="ml-4" for="test2">Nein</label>
+                        </div>
+                        <div class="tab-check-box-2 mt-2">
+                            <span class="media-text">Betrag versieben:</span>
+                            <input type="radio" id="test3" name="radio-group" checked>
+                            <label for="test3">Auf Tag davor</label>
+                            <input type="radio" id="test4" name="radio-group" checked>
+                            <label class="ml-4" for="test4">Aut Tag danach</label>
+                            <input type="radio" id="test5" name="radio-group" checked>
+                            <label class="ml-4" for="test5">Nein</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- tab--2 end -->
+
+        <!-- tab 3 start -->
+        <div class="container-fluid tabs autoren-tab ">
+            <div class="row mt-5">
+                <div class="col">
+                    <a class="plus-neuen-autor float-right" href="#">
+                        <i class="fas fa-plus-square mr-1"></i>
+                        <span class="gray-color">Neuen Autor</span>
+                    </a>
+                    <table style="width: 100%;" class="autor-table main-table table-border">
+                        <thead>
+                            <tr>
+                                <td>Autor</td>
+                                <td>Name</td>
+                                <td>E-Mail Adresse</td>
+                                <td>Kennwort</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input class="kanal-input" type="text" value="Autor 1">
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="header-dropdown btn btn-light selection dropdown-toggle table-dropdown text-left"
+                                            type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Daniel <i class="fas fa-chevron-down autor-icon"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                                            <a class="dropdown-item" href="#">Firma2</a>
+                                            <a class="dropdown-item" href="#">Firma3</a>
+                                            <a class="dropdown-item" href="#">Firma4</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <input class="kanal-input" type="text" value="info@blarium.de">
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="header-dropdown btn btn-light selection dropdown-toggle table-dropdown text-left"
+                                            type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Admin <i class="fas fa-chevron-down autor-icon"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                                            <a class="dropdown-item" href="#">Firma2</a>
+                                            <a class="dropdown-item" href="#">Firma3</a>
+                                            <a class="dropdown-item" href="#">Firma4</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="kanal-input" type="text" value="Autor 2">
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="header-dropdown btn btn-light selection dropdown-toggle table-dropdown text-left"
+                                            type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Nicole <i class="fas fa-chevron-down autor-icon"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                                            <a class="dropdown-item" href="#">Firma2</a>
+                                            <a class="dropdown-item" href="#">Firma3</a>
+                                            <a class="dropdown-item" href="#">Firma4</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <input class="kanal-input" type="text" value="info@golive-design.com">
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="header-dropdown btn btn-light selection dropdown-toggle table-dropdown text-left"
+                                            type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Draf bearbeiten <i class="fas fa-chevron-down autor-icon"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                                            <a class="dropdown-item" href="#">Firma2</a>
+                                            <a class="dropdown-item" href="#">Firma3</a>
+                                            <a class="dropdown-item" href="#">Firma4</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="kanal-input" type="text" value="Autor 3">
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="header-dropdown btn btn-light selection dropdown-toggle table-dropdown text-left"
+                                            type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Marlene <i class="fas fa-chevron-down autor-icon"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                                            <a class="dropdown-item" href="#">Firma2</a>
+                                            <a class="dropdown-item" href="#">Firma3</a>
+                                            <a class="dropdown-item" href="#">Firma4</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="header-dropdown btn btn-light selection dropdown-toggle table-dropdown text-left"
+                                            type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Beobachter <i class="fas fa-chevron-down autor-icon"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                                            <a class="dropdown-item" href="#">Firma2</a>
+                                            <a class="dropdown-item" href="#">Firma3</a>
+                                            <a class="dropdown-item" href="#">Firma4</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="">
+                                        <i class="fas fa-plus bluck-plus"></i>
+                                    </a></td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="header-dropdown btn btn-light selection dropdown-toggle table-dropdown text-left"
+                                            type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            -- <i class="fas fa-chevron-down autor-icon"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                                            <a class="dropdown-item" href="#">Firma2</a>
+                                            <a class="dropdown-item" href="#">Firma3</a>
+                                            <a class="dropdown-item" href="#">Firma4</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="header-dropdown btn btn-light selection dropdown-toggle table-dropdown text-left"
+                                            type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Wählen <i class="fas fa-chevron-down autor-icon"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                                            <a class="dropdown-item" href="#">Firma2</a>
+                                            <a class="dropdown-item" href="#">Firma3</a>
+                                            <a class="dropdown-item" href="#">Firma4</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- tab 3 end -->
+        <div class="container-fluid">
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="table-header details-table common-border active tab-head-2" sec='.todo-list-tab'>
+                        <h6 class="ml-4 mb-0">TO-DO LIST</h6>
+                    </div>
+                    <div class="active-angal"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="table-header details-table common-border tab-head-2" sec='.hinweis-e-mails'>
+                        <h6 class="ml-3 mb-0">HINWEIS E-MAILS</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- tab 1 todo-list start -->
+        <div class="container-fluid tabs-2 todo-list-tab mt-4 pb-5" style="display: block;">
+            <table class="autor-table main-table table-border todo-list-table mb-4">
+                <colgroup>
+                    <col width="34%">
+                    <col width="33%">
+                    <col width="20%">
+                    <col width="13%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <td colspan="4" class="plus-neuen-author-td">
+                            <a class="plus-neuen-autor m-0" href="#">
+                                <i class="fas fa-plus-square mr-1"></i>
+                                <span class="gray-color">Neuen List</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>TO-DO Listen</td>
+                        <td colspan="3">Anzahl To-Do’s</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="dropdown">
+                                <button class="header-dropdown btn btn-light selection dropdown-toggle table-dropdown text-left"
+                                    type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                        Twitter <i class="fas fa-chevron-down autor-icon"></i>
+                                    </a>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="triggerId">
+                                    <a class="dropdown-item" href="#">Firma2</a>
+                                    <a class="dropdown-item" href="#">Firma3</a>
+                                    <a class="dropdown-item" href="#">Firma4</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            4
+                        </td>
+                        <td class="actions-cell">
+                            <a href="#">
+                                <i class="far fa-file-alt"></i>
+                            </a>
+                            <a href="#">
+                                <i class="far fas fa-trash-alt"></i>
+                            </a>
+                        </td>
+                        <td class="open-floating-list-parent">
+                            <a href="#" class="open-floating-list">
+                                <i class="far fa-edit"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="dropdown">
+                                <button class="header-dropdown btn btn-light selection dropdown-toggle table-dropdown text-left"
+                                    type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <a href="#">
+                                        <i class="fab fa-facebook-square"></i>
+                                        Facebook <i class="fas fa-chevron-down autor-icon"></i>
+                                    </a>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="triggerId">
+                                    <a class="dropdown-item" href="#">Firma2</a>
+                                    <a class="dropdown-item" href="#">Firma3</a>
+                                    <a class="dropdown-item" href="#">Firma4</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            10
+                        </td>
+                        <td class="actions-cell">
+                            <a href="#">
+                                <i class="far fa-file-alt"></i>
+                            </a>
+                            <a href="#">
+                                <i class="far fas fa-trash-alt"></i>
+                            </a>
+                        </td>
+                        <td class="open-floating-list-parent">
+                            <a href="#" class="open-floating-list">
+                                <i class="far fa-edit"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="dropdown">
+                                <button class="header-dropdown btn btn-light selection dropdown-toggle table-dropdown text-left"
+                                    type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <a href="#">
+                                        <i class="fab fa-google-plus-g"></i>
+                                        Google + <i class="fas fa-chevron-down autor-icon"></i>
+                                    </a>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="triggerId">
+                                    <a class="dropdown-item" href="#">Firma2</a>
+                                    <a class="dropdown-item" href="#">Firma3</a>
+                                    <a class="dropdown-item" href="#">Firma4</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            24
+                        </td>
+                        <td class="actions-cell">
+                            <a href="#">
+                                <i class="far fa-file-alt"></i>
+                            </a>
+                            <a href="#">
+                                <i class="far fas fa-trash-alt"></i>
+                            </a>
+                        </td>
+                        <td class="open-floating-list-parent">
+                            <a href="#" class="open-floating-list">
+                                <i class="far fa-edit"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Floating-list start -->
+            <div class="floating-list">
+                <div class="list-header">
+                    <div class="list-heading">Liste Twitter</div>
+                </div>
+                <div class="list-detail">
+                    <div class="list-details">
+                        <a href="#" class="handle">
+                            <i class="fas fa-arrows-alt"></i>
+                        </a>
+                        <input type="text" class="list-text" value="Bild gefunden" readonly>
+                        <!-- <span class="list-text">Bild gefunden</span> -->
+                        <span class="float-right">
+                            <a class="mr-3 btn-delete" href="#">
+                                <i class="far fas fa-trash-alt"></i>
+                            </a>
+                            <a href="#" class="btn-edit">
+                                <i class="far fa-edit"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="list-details">
+                        <a href="#" class="handle">
+                            <i class="fas fa-arrows-alt"></i>
+                        </a>
+                        <input type="text" class="list-text" value="Quellen recherchiert" readonly>
+                        <!-- <span class="list-text">Quellen recherchiert</span> -->
+                        <span class="float-right">
+                            <a class="mr-3 btn-delete" href="#">
+                                <i class="far fas fa-trash-alt"></i>
+                            </a>
+                            <a href="#" class="btn-edit">
+                                <i class="far fa-edit"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="list-details">
+                        <a href="#" class="handle">
+                            <i class="fas fa-arrows-alt"></i>
+                        </a>
+                        <input type="text" class="list-text" value="Keywords überlegt" readonly>
+                        <!-- <span class="list-text">Keywords überlegt</span> -->
+                        <span class="float-right">
+                            <a class="mr-3 btn-delete" href="#">
+                                <i class="far fas fa-trash-alt"></i>
+                            </a>
+                            <a href="#" class="btn-edit">
+                                <i class="far fa-edit"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="list-details">
+                        <a href="#" class="handle">
+                            <i class="fas fa-arrows-alt"></i>
+                        </a>
+                        <input type="text" class="list-text" value="Keyword-Dichte berechnet" readonly>
+                        <!-- <span class="list-text">Keyword-Dichte berechnet</span> -->
+                        <span class="float-right">
+                            <a class="mr-3 btn-delete" href="#">
+                                <i class="far fas fa-trash-alt"></i>
+                            </a>
+                            <a href="#" class="btn-edit">
+                                <i class="far fa-edit"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="list-details">
+                        <a href="#" class="handle">
+                            <i class="fas fa-arrows-alt"></i>
+                        </a>
+                        <input type="text" class="list-text" value="Text Korrektur lesen lassen" readonly>
+                        <!-- <span class="list-text">Text Korrektur lesen lassen</span> -->
+                        <span class="float-right">
+                            <a class="mr-3 btn-delete" href="#">
+                                <i class="far fas fa-trash-alt"></i>
+                            </a>
+                            <a href="#" class="btn-edit">
+                                <i class="far fa-edit"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div id="list-input" class="todo-list-adder">
+                    <a class="handle add-button">
+                        <i class="fas fa-plus-square"></i>
+                    </a>
+                    <div class="weiteres d-flex">
+                        <input class="weiteres-input list-input" type="text" placeholder="Weiteres To Do">
+                        <a class="ok-button list-button" href="#">ok</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Floating-list end -->
+        </div>
+        <!-- tab 1 todo-list end -->
+        <div class="container-fluid tabs-2 hinweis-e-mails">
+            <div class="hinweis-e-mails-bg">
+                <h3 style="text-transform: uppercase;" class="green-color mb-4">Wann möchten SIe eine E-Mail
+                    Bekommen?</h3>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="check-boxs">
+                            <div class="check-box">
+                                <label class="container-checkbox gray-color email-text">Veröffentlichung
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="check-box my-4">
+                                <label class="container-checkbox gray-color email-text">Status “ofFen” in dieser Woche
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="check-box my-4">
+                                <label class="container-checkbox gray-color email-text">Status “ofFen” in nächster Woche
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="check-box">
+                                <label class="container-checkbox gray-color email-text">Start Bearbeting
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="check-box my-4">
+                                <label class="container-checkbox gray-color email-text">Deadlines
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="check-box">
+                            <input type="radio" id="test6" name="radio-group2" checked>
+                            <label class="gray-text" for="test6">Nur bei meinen Beiträgen</label>
+                        </div>
+                        <div class="check-box mt-3">
+                            <input type="radio" id="test7" name="radio-group2">
+                            <label class="gray-text" for="test7">Bei alles Beiträgen </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/jquery.js"></script>
+        <script src="./js/popper.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="./js/tabs.js"></script>
+        <script src="./js/jscolor.js"></script>
+        <script src="./js/einstellungen.js"></script>
+        <script src="./js/index.js"></script>
+</body>
+
+</html>
